@@ -6,3 +6,10 @@ npx prisma init --datasource-provider sqlite
 
 npx prisma migrate dev
   -- Name migration: add snippets
+
+
+model Snippet {
+  id Int @id @default(@autoincrement())
+  title String
+  code String
+}
