@@ -1,1 +1,8 @@
 npm install prisma
+
+npx prisma init --datasource-provider sqlite
+
+# Create model in schema.prisma
+
+npx prisma migrate dev
+  -- Name migration: add snippets
